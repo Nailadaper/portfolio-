@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* =========================main page css=========================== */
+.main {
+    background-image: url("./assets/images/background.png");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:left;
+}
+
+.main .header {
+    text-align: center;
+}
+
+.main .header h1 {
+    font-size: 50px;
+    padding: 100px 30px;
+    color: white;
+    display: inline-block;
+}
+
+.main h1 span {
+    padding: 20px;
+}
+
+.main .header .heading {
+    font-size: 70px;
+    display: inline-block;
+}
+
+.main .header .heading span {
+    color: orange;
+}
+
+/* =========================main media query========================== */
+@media screen and (max-width:1200px) {
+    .main .header h1 {
+        padding: 70px 20px;
+    }
+
+    .main h1 span {
+        padding: 10px;
+    }
+
+    .main .header .heading {
+        font-size: 60px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .main .header h1 {
+        padding-top: 50px 10px 50px 20px;
+    }
+
+    .main h1 span {
+        padding: 10px;
+    }
+
+    .main .header .heading {
+        font-size: 30px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .main .header h1 {
+        /* padding-top: 20px 50px 20px 20px; */
+        font-size: 20px;
+        padding: 40px 10px;
+    }
+
+    .main .header .heading {
+        font-size: 20px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .main .header h1 {
+        /* padding-top: 20px 50px 20px 20px; */
+        font-size: 18px;
+        padding: 40px 0px 40px 5px;
+    }
+
+    .main .header h1 span {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .main .header .heading {
+        display: inline-block;
+    }
+}
+
+
+/* =========================hero section css=========================== */
+
+.section-hero {
+    width: 70%;
+    background-color: #383444;
+    margin: auto;
+    background-position: top;
+}
+
+/* =========navbar css========== */
+
+nav {
+    padding-top: 80px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+nav .logo {
+    color: white;
+    padding: 0px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav .logo span {
+    display: inline;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0px 10px;
+    transition: all .5s;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 3px;
+
+}
+
+nav ul li img:hover {
+    cursor: pointer;
+}
+
+
+.checkbox {
+    border: none;
+    width: 800px;
+    height: 40px;
+    display: none;
+    text-align: end;
+}
+
+select {
+    appearance: none;
+    outline: none;
+}
+
+#responsive-navbar {
+    background-color: transparent;
+    border: transparent;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-active {
+    display: none;
+}
+
+.nav-items {
+    color: rgb(243, 243, 243);
+    font-size: 18px;
+    background-color: rgb(40, 40, 40);
+}
+
+.nav-items:hover {
+    margin: auto;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1100px) {
+    nav{
+        background-color: #1f1f20;
+        width: 100%;
+        height: 5vh;
+        margin: auto;
+    }
+    nav .logo {
+        font-size: 30px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .checkbox {
+        display: block;
+        float: right;
+    }
+}
+
+@media screen and (max-width:500px) {
+    nav{
+        background-color: #1f1f20;
+        width: 100%;
+        height: 5vh;
+        margin: auto;
+    }
+    nav .logo {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .checkbox{
+        width: 200px;
+        margin: 0px auto;
+    }
+}
+/* ========================upper body css=============================== */
+/* upper body */
+.upper-body{
+    margin: 100px 40px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* left work */
+.left-work {
+    flex-basis: 30%;
+   line-height: 40px;
+}
+.left-work h1:nth-child(1){
+    color: rgb(109, 107, 107);
+}
+.left-work .empty{
+    border: 1px solid orange;
+    width: 80px;
+    margin: 40px 0px;
+}
+.left-work p{
+    color: rgb(145, 143, 143);
+}
+/* right work */
+.right-work {
+    flex-basis: 30%;
+   color: white;
+}
+.right-work h1{
+    margin: 20px 0px;
+}
+.right-work h3{
+    color: orange;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+.right-work h3:hover{
+    color: rgb(255, 255, 255);
+}
+.right-work p{
+    color: rgb(145, 143, 143);
+}
+.fa-brands{
+    color: rgb(202, 173, 121);
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(83, 82, 82);
+    padding: 5px;
+    margin: 10px 10px 90px 10px;
+    display: inline;
+}
+.fa-brands:hover{
+    background-color:rgb(173, 170, 165) ;
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+   font-size: 35px;
+}
+/* avatar work */
+.avatar-work{
+    flex-basis: 30%;
+    margin-right: 10px;
+}
+.avatar-work div img {
+    width: 350px ;
+    background-color: rgb(37, 31, 31);
+    border-radius: 50%;
+    
+
+}
+/* media query for upper body */
+@media screen and (max-width:1200px) {
+    .upper-body{
+        flex-direction: column;
+    }
+    .right-work{
+        margin: 20px auto 0px auto;
+        order: 2;
+    }
+    .avatar-work{
+        order: 3;
+    }
+    .avatar-work div img{
+        width: 250px ;
+    }
+    .right-work .fa-brands{
+       font-size: 18px;
+       width: 25px;
+       padding: 3px;
+       height: 25px;
+    }
+    
+}
+@media screen and (max-width:700px){
+.right-work .fa-brands{
+    font-size: 18px;
+    width: 25px;
+    padding: 3px;
+    height: 25px;
+    
+ }
+}
+/* =========================contact section css============================ */
+.contacts-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(48, 40, 40);
+    width: 1000px;
+    margin: 0px auto;
+    height: 190px;
+}
+.contacts-section .one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts-section .two{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-section ul li{
+    background-color: #1f1f20;
+    color: white;
+}
+.contacts-section .one li:nth-child(1) {
+    margin: auto 30px;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+}
+.contacts-section .one li:nth-child(2) {
+    margin: auto;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+}
+.contacts-section .two li:nth-child(1) {
+    margin: auto 30px;
+    width: 150px;
+    height: 100px;    
+    padding: 10px;
+}
+.contacts-section .two li:nth-child(2) {
+    margin: auto;
+    width: 150px;
+    height: 100px;   
+    padding: 10px;
+}
+.contacts-section .fa-brands{
+    background-color: transparent;
+}
+
+/* media query */
+@media screen and (max-width:1500px) {
+    .contacts-section{
+       flex-direction: column;
+       height: 300px;
+       width: 500px;
+       margin: auto;
+    }
+    .contacts-section ul{
+        padding-top: 10px;
+        margin: auto;
+    }
+    .contacts-section ul li{
+        padding: 30px 0px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:780px) {
+   .contacts-section{
+    height: 500px;
+    width: 200px;
+   }
+    .one{
+    flex-direction: column;
+   }
+   .two{
+    flex-direction: column;
+   }
+   
+}
+
+/* ===========================lower body css============================== */
+.lower-body{
+    background-color: rgb(29, 24, 24);
+   display: flex;
+   justify-content: space-around;
+    align-items: center;
+}
+/* div css */
+.needs{
+    width: 40%;
+    color: white;
+    margin: auto;
+}
+.needs h1{
+    font-size: 40px;
+}
+.needs h1 span{display: block;}
+.needs p{
+    font-size: 20px;
+    width: 80%;
+
+}
+.needs ul {
+    width: 90%;
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.needs ul  li{
+    margin: 30px 0px;
+}
+.needs ul li span{
+    color: orange; 
+    font-size: 20px;
+}
+/* skills div css */
+.skills{
+    margin: 40px auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.skills ul li{
+    color: white;
+}
+.skills ul li .fa-sharp{
+    color: orange;
+
+}
+.skills img{
+    width: 200px;
+    margin: 20px 0px;
+}
+.skills ul li h1{
+    text-transform: capitalize;
+}
+.skills ul li p{
+    margin: 10px 0px;
+}
+.empty-div{
+    border-bottom: 2px solid grey;
+    width: 80%;
+    margin: 10px 0px;
+}
+/* media query for lower body */
+@media screen and (max-width:800px) {
+    .lower-body{
+        flex-direction: column;
+    }
+    .needs{
+        margin-top: 90px;
+        width: 80%;
+    }
+   
+
+    
+}
